@@ -55,7 +55,7 @@ public class StudentReportCard {
         System.out.printf("Last digit : %d%n", lastDigit);
         System.out.printf("Phone      : %d%n", phone);
         System.out.printf("Section    : %c%n", section);
-        System.out.printf("Total      : %.2f (%d as int)%n", total, totalInt);
+        System.out.printf("Total      : %.2f%n ", total);
         System.out.printf("Average    : %.2f%n", average);
         System.out.printf("Grade      : %c%n", grade);
         System.out.printf("Result     : %s%n", passed ? "Pass" : "Fail");
@@ -72,6 +72,6 @@ public class StudentReportCard {
         }
         System.out.println("=================================");
 
-      
+        sc.close();
     }
 }
