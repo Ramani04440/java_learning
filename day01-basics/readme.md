@@ -75,7 +75,7 @@ Roll No    : 105 (Odd)
 Last digit : 5
 Phone      : 9876543210
 Section    : A
-Total      : 255.50 (255 as int)
+Total      : 255.50
 Average    : 85.17
 Grade      : B
 Result     : Pass
