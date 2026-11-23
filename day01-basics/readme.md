@@ -1,45 +1,63 @@
-```markdown
 # Student Report Card
 
-A simple Java console program that reads a student's details, calculates the total, average and grade, and prints a formatted report card.
+A Java console application that reads a student's details, calculates the total, average and grade, and prints a neatly formatted report card.
 
 ## Features
 
-- Reads roll number, name, phone number, section, 3 subject marks and attendance using `Scanner`
-- Calculates total, average and grade (A, B, C, D, F)
-- Checks pass or fail (a student passes only if all subjects are 40 or above)
-- Shows whether the roll number is even or odd and its last digit
-- Prints the report using `printf`
-- Shows an "Attendance bonus eligible" message for students who pass and attend all classes
+- Reads roll number, name, phone number, section, marks in 3 subjects and attendance using `Scanner`
+- Calculates total, average and grade (A, B, C, D or F)
+- Checks pass or fail: a student passes only if all three subjects are 40 or above
+- Shows whether the roll number is even or odd, and its last digit
+- Prints the report card using `printf`
+- Shows "Attendance bonus eligible" for students who pass and attended all classes
 
 ## Concepts Used
 
-- Data types: `int`, `long`, `double`, `char`, `String`, `boolean`
-- `final` constant (`PASS_MARK`)
-- Operators: `/`, `%`, `&&`, `||`, `!`
-- Type casting: `(int) total`
-- `if / else if / else` and the ternary operator
-- `Scanner` input (including handling the `nextLine()` issue after `nextInt()`)
-- Formatted output with `printf`
+| Concept | Where it is used |
+|---|---|
+| Data types: `int`, `long`, `double`, `char`, `String`, `boolean` | Storing all student details |
+| `final` constant | `PASS_MARK = 40.0` |
+| Arithmetic operators `/` and `%` | Average, last digit, even or odd |
+| Logical operators `&&`, `\|\|`, `!` | Pass, fail and bonus checks |
+| Type casting | `(int) total` |
+| `if / else if / else` | Grade calculation |
+| Ternary operator | Even or odd label |
+| `Scanner` | Reading input, including the `nextLine()` fix after `nextInt()` |
+| `printf` | Formatted report output |
+
+## Grading Scale
+
+| Average | Grade |
+|---|---|
+| 90 and above | A |
+| 75 to 89.99 | B |
+| 60 to 74.99 | C |
+| 40 to 59.99 | D |
+| Below 40 | F |
 
 ## How to Run
 
-1. Make sure Java (JDK 8 or above) is installed. Check with:
-   ```
-   java -version
-   ```
-2. Compile the program:
-   ```
-   javac StudentReportCard.java
-   ```
-3. Run it:
-   ```
-   java StudentReportCard
-   ```
+**Requirements:** JDK 8 or above. Check your version:
+
+```bash
+java -version
+```
+
+**Compile:**
+
+```bash
+javac StudentReportCard.java
+```
+
+**Run:**
+
+```bash
+java StudentReportCard
+```
 
 ## Sample Input
 
-```
+```text
 Enter roll number: 105
 Enter name: Arun Kumar
 Enter phone number: 9876543210
@@ -50,7 +68,7 @@ Attended all classes (true/false): true
 
 ## Sample Output
 
-```
+```text
 ========== REPORT CARD ==========
 Name       : Arun Kumar
 Roll No    : 105 (Odd)
@@ -66,18 +84,18 @@ Attendance bonus eligible
 =================================
 ```
 
-## Grading Scale
+## Project Structure
 
-| Average | Grade |
-|---|---|
-| 90 and above | A |
-| 75 to 89.99 | B |
-| 60 to 74.99 | C |
-| 40 to 59.99 | D |
-| Below 40 | F |
+```text
+java-learning-journey/
+├── README.md
+└── day01-basics/
+    ├── StudentReportCard.java
+    └── README.md
+```
 
 ## Author
 
-RAMANI S
-```
+**RAMANI S**
 
+Learning Java from scratch, one day at a time.
